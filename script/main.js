@@ -32,7 +32,8 @@ $(document).ready(function(){
         sliderCount++;
         var count = sliderCount % sliderLen;
         $(".main > div").eq(count).stop().fadeOut(1000);
-        $(".main > div").eq(count).siblings().stop().fadeIn(1000);
+        $(".main > div").eq(count).siblings(1).stop().fadeIn(1000);
+        $(".main > div").eq(count).siblings(2).stop().fadeIn(1000);
     }
 
     setInterval(mainVisualSlider, 4000);
